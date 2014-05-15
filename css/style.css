@@ -110,7 +110,7 @@ section{
 	display: block;
 	left: 0;
 	background-image: url(../images/workshop.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -193,10 +193,17 @@ footer{
 	width: 100%;
 	height: 30%;
 	background-color: #5c5c5c;
+	border-top: 1px solid #000;
+}
+
+footer p{
+	color: #aeaeae;
+	font-size: 16px;
+	text-align: center;
 }
 
 .factoid{
-	margin: 50px auto;
+	margin: 65px auto;
 	overflow: auto;
 }
 
@@ -246,17 +253,32 @@ footer{
 }
 
 #planetLogo img{
-	width: 46%;
 	display: block;
 	margin: auto;
+	width: 150px;
 }
 
 #planetLogo p{
-	font-size: 1em;
+	font-size: 0.8em;
 	color: #ccc;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 2px;
 }
+
+@-webkit-keyframes pointing{
+  0%   {-webkit-transform: rotate(0deg); }
+  76%   {-webkit-transform: rotate(0deg); }
+  77%	{-webkit-transform: rotate(6deg); }
+  78%   {-webkit-transform: rotate(0deg); }
+  79%	{-webkit-transform: rotate(6deg); }
+  80%   {-webkit-transform: rotate(0deg); }
+  95%	{-webkit-transform: rotate(0deg); }
+  96%   {-webkit-transform: rotate(6deg); }
+  97%	{-webkit-transform: rotate(0deg); }
+  98%   {-webkit-transform: rotate(6deg); }
+  100%   {-webkit-transform: rotate(0deg); }
+}
+
 
 .nextArrow{
 	position: absolute;
@@ -268,6 +290,12 @@ footer{
 
 .handContainer{
 	width: 100%;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	animation: pointing 10s infinite;
+	animation-timing-function: ease;
+	-webkit-animation: pointing 10s infinite;
+	-webkit-animation-timing-function: ease;
 }
 
 .handContainer img{
@@ -281,7 +309,7 @@ footer{
 
 #heatmaxQuiz{
 	background-image: url(../images/huntingBack.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -304,7 +332,7 @@ footer{
 	top: -100%;
 	left: 10%;
 	background: rgba(20,20,20,0.3);
-	padding: 80px 60px;
+	padding: 130px 60px;
 	height: 80%;
 }
 
@@ -397,23 +425,56 @@ footer{
 
 .heatmaxlogo{
 	position: absolute;
-	bottom: 30%;
-	right: 5%;
-	width: 25%;
+	bottom: -30%;
+	left: 8%;
+	width: 15%;
 	max-width: 397px;
 	height: 108px;
 }
 
 .hotprod{
 	position: absolute;
-	bottom: 30%;
-	left: 5%;
+	top: -100%;
+	left: 0; right: 0;
+	margin: auto;
 	width: 60%;
 	max-width: 750px;
 }
 
 .heatmaxlogo img, .hotprod img{
 	width: 100%;
+}
+
+.correct{
+	font-family: Arial, sans-serif;
+	font-size: 2.2em;
+	color: #fff;
+	text-align: center;
+	line-height: 1.3em;
+	letter-spacing: 0.02em;
+	display: block;
+}
+
+.blurb{
+	font-family: Arial, sans-serif;
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+	line-height: 1.3em;
+	letter-spacing: 0.02em;
+	display: block;
+}
+
+#firstAnswer{
+	position: absolute;
+	padding: 20px 50px 10px;
+	width: 100%;
+	top: -500px;
+	background-color: rgba(20,20,18, 0.4);
+}
+
+#arrowTwo{
+	display: none;
 }
 
 .fullscreenmodal{
@@ -437,6 +498,33 @@ footer{
 	background: rgba(250,250,250, 0.9);
 }
 
-#arrowTwo h5{
-	color: #333;
+.pointingMan{
+	position: absolute;
+	top: -10px; left: 50px;
+	width: 450px;
 }
+
+.pointingMan img{
+	width: 100%;
+}
+
+.trivia p{
+	font-family: Arial, sans-serif;
+	font-size: 1.8em;
+	color: #fff;
+	text-align: center;
+	line-height: 2em;
+	letter-spacing: 0.02em;
+	display: block;
+	position: absolute;
+	left: 0; right: 0; bottom: 40%;
+	margin: auto;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	width: 700px;
+}
+
+
+
+
+
