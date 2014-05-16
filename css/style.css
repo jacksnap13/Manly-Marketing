@@ -117,8 +117,8 @@ section{
 
 .intro{
 	position: absolute;
-	width: 30%;
-	top: 18%;
+	width: 35%;
+	top: 16%;
 	right: 18%;
 }
 
@@ -196,10 +196,47 @@ footer{
 	border-top: 1px solid #000;
 }
 
-footer p{
+
+.ribbon{
+	overflow: auto;
+	width: 60%;
+	max-width: 1300px;
+	background-image: url(../images/ribbon.svg);
+	background-size: 100% 100%;
+	margin: 20px auto;
+	padding: 3% 7% 1.5%;
+	position: relative;
+	overflow: visible;
+}
+
+.ribbon2{
+	overflow: auto;
+	width: 60%;
+	max-width: 1300px;
+	background-image: url(../images/ribbon2.svg);
+	background-size: 100% 100%;
+	margin: 20px auto;
+	padding: 3% 12% 1.5%;
+	position: relative;
+	overflow: visible;
+}
+
+
+.ribbon p, .ribbon2 p{
 	color: #aeaeae;
 	font-size: 16px;
+	line-height: 1.4em;
 	text-align: center;
+	font-family: 'baskervilleregular';
+}
+
+.ribbon span, .ribbon a, .ribbon2 span, .ribbon2 a{
+	color: #aeaeae;
+	font-size: 10px;
+	line-height: 1.4em;
+	text-align: center;
+	font-family: 'baskervilleitalic';
+	/* padding: 2%; */
 }
 
 .factoid{
@@ -282,8 +319,8 @@ footer p{
 
 .nextArrow{
 	position: absolute;
-	bottom: 25%;
-	right: 13%;
+	bottom: 32%;
+	right: 5%;
 	width: 120px;
 	cursor: pointer;
 }
@@ -330,9 +367,9 @@ footer p{
 	position: absolute;
 	width: 50%;
 	top: -100%;
-	left: 10%;
+	left: 5%;
 	background: rgba(20,20,20,0.3);
-	padding: 130px 60px;
+	padding: 150px 40px;
 	height: 80%;
 }
 
@@ -348,7 +385,7 @@ footer p{
 }
 
 .quizcontainer h4{
-	font-family: Arial, sans-serif;
+	font-family: Tahoma, sans-serif;
 	font-size: 1.9em;
 	padding: 20px 15px 5px;
 	color: #fff;
@@ -357,25 +394,26 @@ footer p{
 }
 
 .answer{
-	background-color: #1F9CCC;
+	background-color: #c5511e;
 	padding: 15px;
 	border: 1px solid #fff;
-	width: 330px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
 	position: absolute;
-	left: 100px;
-	padding: 5px 0;
+	padding: 3% 0;
 	cursor: pointer;
 }
 
-.answer.one{top: -100px;}
-.answer.two{top: -100px;}
-.answer.three{top: -100px;}
-.answer.four{top: -100px;}
+.answer.one{top: -100px; left: 50px;}
+.answer.two{top: -100px; left: 150px;}
+.answer.three{top: -100px; left: 250px;}
+.answer.four{top: -100px; left: 350px;}
 
 .quizcontainer p{
-	font-family: Arial, sans-serif;
+	font-family: Tahoma, sans-serif;
 	font-weight: normal;
-	font-size: 1.7em;
+	font-size: 28px;
 	color: #fff;
 	line-height: 1.9em;
 	letter-spacing: 0.02em;
@@ -383,7 +421,7 @@ footer p{
 }
 
 .answer:hover{
-	background-color: #2a72de;
+	background-color:#de8004;
 }
 
 .quizcontainer p span{
@@ -414,7 +452,7 @@ footer p{
 }
 
 .rightwrong h4{
-	font-family: Arial, sans-serif;
+	font-family: Tahoma, sans-serif;
 	font-size: 1.7em;
 	padding: 10px 15px;
 	color: #fff;
@@ -426,7 +464,7 @@ footer p{
 .heatmaxlogo{
 	position: absolute;
 	bottom: -30%;
-	left: 8%;
+	right: 27%;
 	width: 15%;
 	max-width: 397px;
 	height: 108px;
@@ -435,9 +473,9 @@ footer p{
 .hotprod{
 	position: absolute;
 	top: -100%;
-	left: 0; right: 0;
+	right: 10%;
 	margin: auto;
-	width: 60%;
+	width: 50%;
 	max-width: 750px;
 }
 
@@ -446,30 +484,36 @@ footer p{
 }
 
 .correct{
-	font-family: Arial, sans-serif;
-	font-size: 2.2em;
-	color: #fff;
-	text-align: center;
+	font-family: Tahoma, sans-serif;
+	font-size: 22px;
+	color: orange;
+	text-align: left;
 	line-height: 1.3em;
 	letter-spacing: 0.02em;
 	display: block;
 }
 
 .blurb{
-	font-family: Arial, sans-serif;
-	font-size: 1.5em;
+	font-family: Tahoma, sans-serif;
 	color: #fff;
-	text-align: center;
+	font-weight: 100;
+	text-align: left;
+	font-size: 18px;
 	line-height: 1.3em;
 	letter-spacing: 0.02em;
 	display: block;
 }
 
-#firstAnswer{
+
+.answerbox p, .answerbox a{font-size: 8px; color: #fff;line-height: 10px;}
+
+.answerbox{
 	position: absolute;
-	padding: 20px 50px 10px;
-	width: 100%;
-	top: -500px;
+	padding: 100px 5% 10px;
+	left: 5%;
+	height: 90%;
+	width: 30%;
+	top: -100%;
 	background-color: rgba(20,20,18, 0.4);
 }
 
@@ -485,6 +529,18 @@ footer p{
 	top: 0; bottom: 0; left:0; right:0;
 	margin: auto;
 	display: none;
+}
+
+.golfer{
+	height: 300%;
+	width: 30%;
+	position: absolute;
+	top: -50px;
+	left: -10%;
+}
+
+.golfer img{
+	width: 100%;
 }
 
 
@@ -509,7 +565,7 @@ footer p{
 }
 
 .trivia p{
-	font-family: Arial, sans-serif;
+	font-family: Tahoma, sans-serif;
 	font-size: 1.8em;
 	color: #fff;
 	text-align: center;
@@ -523,6 +579,52 @@ footer p{
 	border-top: 1px solid #fff;
 	width: 700px;
 }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////                                                    ///////////////////////////////////////*/
+/*///////////////////////////////////     LANDSCAPE MEDIA QUERIES          //////////////////////////////////////*/
+/*//////////////////////////////////                                                      ////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media all and (max-width: 980px){
+	.ribbon p{font-size: 14px;}
+	.ribbon{padding: 3% 15% 1.5%;}
+	.ribbon span, .ribbon a{font-size: 8px;}
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////                                    //////////////////////////////////////////////*/
+/*///////////////////////////////////////////      PORTRAIT CSS         ///////////////////////////////////////////////*/
+/*//////////////////////////////////////////                                   ///////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@media all and (orientation:portrait) {
+	
+	.intro{ width: 50%; top: 6%; right: 43%;}
+	.nextArrow{ bottom: 45%; right: 60%;}
+	#sawingMan{ height: 90%; width: 60%; bottom: 23%; right: -2%;}
+	#plumbob{ right: 88%;}
+	
+	@media all and (max-width: 700px){
+		.welcome p{ line-height: 1.4em;}
+		.nextArrow{bottom: 37%;}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

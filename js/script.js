@@ -7,10 +7,10 @@ $(function(){
 		nextSection.css("display", "block").animate({left: "0px"}, 500);
 		$("#hunter").animate({right: "5%"}, 900);
 		$("#quizcontainer1").delay(700).animate({top: "-2%"}, 700);
-		$(".answer.one").delay(1000).animate({top: "260px"}, 600);
-		$(".answer.two").delay(1400).animate({top: "330px"}, 600);
-		$(".answer.three").delay(1700).animate({top: "400px"}, 700);
-		$(".answer.four").delay(1900).animate({top: "470px"}, 800);
+		$(".answer.one").delay(1000).animate({top: "300px"}, 600);
+		$(".answer.two").delay(1400).animate({top: "300px"}, 600);
+		$(".answer.three").delay(1700).animate({top: "300px"}, 700);
+		$(".answer.four").delay(1900).animate({top: "300px"}, 800);
 	});
 	
 	$(".quizcontainer p").on("mouseover", function(){
@@ -25,7 +25,7 @@ $(function(){
 		var answer = $(this).data("answer");
 		$(".quizcontainer").animate({top: "-2000"}, 800);
 		$("#hunter").delay(300).animate({top: "5000"}, 1200);
-		$(".hotprod").delay(300).animate({top: "150px"}, 600);
+		$(".hotprod").delay(300).animate({top: "100px"}, 600);
 		$(".heatmaxlogo").delay(400).animate({bottom: "30%"}, 600);
 		$("#firstAnswer").delay(400).animate({top: "0"}, 600);
 		$("#arrowTwo").delay(1200).fadeIn(900);
