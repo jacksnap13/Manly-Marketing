@@ -393,6 +393,13 @@ footer{
 	letter-spacing: 0.02em;
 }
 
+.question{
+	width: 100%;
+	height: 200px;
+	background-image: url(../images/question.svg);
+	background-repeat: no-repeat;
+}
+
 .answer{
 	background-color: #c5511e;
 	padding: 15px;
