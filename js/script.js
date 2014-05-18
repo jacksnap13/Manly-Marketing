@@ -25,7 +25,7 @@ $(function(){
 		var answer = $(this).data("answer");
 		$(".quizcontainer").animate({top: "-2000"}, 800);
 		$("#hunter").delay(300).animate({top: "5000"}, 1200);
-		$(".hotprod").delay(300).animate({top: "100px"}, 600);
+		$(".hotprod").delay(300).animate({top: "10%"}, 600);
 		$(".heatmaxlogo").delay(400).animate({bottom: "30%"}, 600);
 		$("#firstAnswer").delay(400).animate({top: "0"}, 600);
 		$("#arrowTwo").delay(1200).fadeIn(900);
