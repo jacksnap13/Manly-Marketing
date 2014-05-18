@@ -480,6 +480,7 @@ footer{
 	right: 10%;
 	margin: auto;
 	width: 50%;
+	max-width: 570px;
 	height: 70%;
 	max-width: 750px;
 }
